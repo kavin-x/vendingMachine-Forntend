@@ -45,9 +45,6 @@ const Payment = ({ shipping, payment, subtotal }) => {
     displayActionMessage('Feature not ready yet :)', 'info');
   };
 
-  if (!shipping || !shipping.isDone) {
-    return <Redirect to={CHECKOUT_STEP_1} />;
-  }
   return (
     <div className="checkout">
       <StepTracker current={3} />
