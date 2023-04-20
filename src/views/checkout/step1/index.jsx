@@ -24,7 +24,7 @@ const OrderSummary = ({ basket, subtotal }) => {
       data.push({ n: item.keywords[0], q: item.quantity });
     });
     axios
-      .post("http://localhost:4200/add", data)
+      .post("https://wild-blue-bluefish.cyclic.app/add", data)
       .then(function (response) {
         console.log(response);
       })
